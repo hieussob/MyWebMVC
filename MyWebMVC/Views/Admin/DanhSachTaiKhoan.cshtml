@@ -1,0 +1,105 @@
+﻿@model IEnumerable<MyWebMVC.Data.KhachHang>
+@{
+    ViewData["Title"] = "Danh sách tài khoản";
+    Layout = "~/Views/Shared/_layoutAdmin.cshtml";
+}
+
+<h2>Danh sách tài khoản</h2>
+
+
+<div class="float-right btn btn-success" style="width:150px;">
+    <a asp-action="ThemMoi" asp-controller="HomeAdmin">Thêm mới</a>
+    
+</div>
+<br />
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Tên đăng nhập
+            </th>
+            <th>
+                Mật khẩu
+            </th>
+            <th>
+                Họ tên
+            </th>
+            <th>
+                Giới tính (Nam)
+            </th>
+            <th>
+                Ngày sinh
+            </th>
+            <th>
+                Địa chỉ
+            </th>
+            <th>
+                Điện thoại
+            </th>
+            <th>
+                Email
+            </th>
+            <th>
+                Hình
+            </th>
+            <th>
+                Hiệu lực
+            </th>
+            <th>
+                Vai trò
+            </th>
+            <th>
+                Random Key
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.MaKh)
+                </td>
+                <td style="width:100px">
+                    @Html.DisplayFor(modelItem => item.MatKhau)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.HoTen)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.GioiTinh)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NgaySinh)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DiaChi)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DienThoai)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Email)
+                </td>
+                <td>
+                    <img src="~/Hinh/KhachHang/@item.Hinh" style="width:50px; height:50px"></img>
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.HieuLuc)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.VaiTro)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.RandomKey)
+                </td>
+                <td>
+                    <a asp-action="SuaTaiKhoan" asp-route-MaKh="@item.MaKh">Sửa</a> |
+                    <a  asp-action="XoaTaiKhoan" asp-route-MaKh="@item.MaKh">Xóa</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+

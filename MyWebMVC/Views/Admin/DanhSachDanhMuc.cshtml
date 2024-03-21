@@ -1,0 +1,54 @@
+﻿@model IEnumerable<MyWebMVC.Data.Loai>
+
+@{
+    ViewData["Title"] = "Danh Sach Danh Mục";
+    Layout = "~/Views/Shared/_layoutAdmin.cshtml";
+}
+
+<h2>DANH SÁCH DANH MỤC</h2>
+
+<p class="btn btn-success float-right">
+    <a asp-action="ThemDanhMuc">Thêm mới danh mục</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Tên loại
+            </th>
+            <th>
+                Tên loại Alias
+            </th>
+            <th>
+                Mô tả
+            </th>
+            <th>
+                Hình ảnh
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.TenLoai)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TenLoaiAlias)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MoTa)
+            </td>
+            <td>
+                <img src="~/Hinh/Loai/@item.Hinh" style="width:100px; height:100px"><img />
+            </td>
+            <td>
+
+                <a asp-action="CapNhatDanhMuc" asp-route-MaLoai="@item.MaLoai">Edit</a> |
+                <a asp-action="XoaDanhMuc" asp-route-MaLoai="@item.MaLoai">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

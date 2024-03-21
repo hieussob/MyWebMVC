@@ -1,0 +1,75 @@
+﻿@model IEnumerable<MyWebMVC.ViewModels.ChiTietDonHangVM>
+
+@{
+	ViewData["Title"] = "Đơn hàng đã được đặt";
+	ViewBag.layout = " / Thông tin / ";
+	ViewBag.layoutDetail = " Đơn hàng của tôi";
+}
+<div class="container">
+	<br />
+<h1>Chi tiết hóa đơn</h1>
+<br />
+
+	<div class="table-responsive">
+			<table class="table">
+				<thead>
+					<tr>
+					<th scope="col">Mô tả</th>
+					<th scope="col">Tên sản phẩm</th>
+					<th scope="col">Giá</th>
+					<th scope="col">Số lượng</th>
+					<th scope="col">Tên khách hàng</th>
+					<th scope="col">Địa chỉ</th>
+					<th scope="col">Ngày đặt hàng</th>
+					<th scope="col">Cách thanh toán</th>
+					<th scope="col">Tổng tiền</th>
+					<th scope="col">Xóa</th>
+					</tr>
+				</thead>
+				<tbody>
+				@foreach (var item in Model)
+				{
+					<tr>
+							<th scope="row">
+								<div class="d-flex align-items-center">
+									<img src="~/Hinh/HangHoa/@item.Hinh" class="img-fluid me-5 rounded-circle" style="width: 80px; height: 80px;" alt="@item.TenHh">
+								</div>
+							</th>
+							<td>
+								<p class="mb-0 mt-4">@item.TenHh</p>
+							</td>
+							<td>
+								<p class="mb-0 mt-4">@item.DonGia $</p>
+							</td>
+							<td>
+								<p class="mb-0 mt-4">@item.SoLuong</p>
+							</td>
+							
+							<td>
+								<p class="mb-0 mt-4" >@item.HoTen </p>
+							</td>
+							<td>
+								<p class="mb-0 mt-4">@item.DiaChi </p>
+							</td>
+							<td>
+								<p class="mb-0 mt-4">@item.NgayDat</p>
+							</td>
+							<td>
+								<p class="mb-0 mt-4">@item.CachThanhToan </p>
+							</td>
+							<td>
+								<p class="mb-0 mt-4" >@item.TongTien $ </p>
+							</td>
+							<td>
+									<a asp-action="RemoveCartDetail" asp-controller="Cart" asp-route-MaHd="@item.MaHd" class="btn btn-md rounded-circle bg-light border mt-4" >
+									<i class="fa fa-times text-danger"></i>
+								</a>
+							</td>
+
+						</tr>
+				}
+		</tbody>
+		</table>
+	</div>
+
+</div>

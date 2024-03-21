@@ -1,0 +1,56 @@
+﻿@model MyWebMVC.Data.HoaDon
+
+@{
+    ViewData["Title"] = "Thêm đơn hàng mới";
+    Layout = "~/Views/Shared/_layoutAdmin.cshtml";
+}
+
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="ThemDonHang">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label class="control-label">Mã khách hàng</label>
+                <select asp-for="MaKh" class ="form-control" asp-items="ViewBag.MaKh"></select>
+            </div>
+            <div class="form-group">
+                <label class="control-label">Họ tên</label>
+                <input asp-for="HoTen" class="form-control" />
+                <span asp-validation-for="HoTen" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label  class="control-label">Địa chỉ</label>
+                <input asp-for="DiaChi" class="form-control" />
+                <span asp-validation-for="DiaChi" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label class="control-label"> Phí vận chuyển</label>
+                <input asp-for="PhiVanChuyen" class="form-control" />
+                <span asp-validation-for="PhiVanChuyen" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label class="control-label">Trạng thái</label>
+                <select asp-for="MaTrangThai" class ="form-control" asp-items="ViewBag.MaTrangThai"></select>
+            </div>
+            <div class="form-group">
+                <label class="control-label">Mã nhân viên</label>
+                <select asp-for="MaNv" class ="form-control" asp-items="ViewBag.MaNv"></select>
+            </div>
+            <div class="form-group">
+                <label class="control-label">Ghi chú</label>
+                <input asp-for="GhiChu" class="form-control" />
+                <span asp-validation-for="GhiChu" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <button type="submit" value="Create" class="btn btn-default btn-danger">Thêm mới</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

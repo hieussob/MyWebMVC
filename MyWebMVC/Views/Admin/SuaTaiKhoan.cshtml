@@ -1,0 +1,93 @@
+﻿@model MyWebMVC.Data.KhachHang
+
+@{
+    ViewData["Title"] = "Sửa tài khoản";
+    Layout = "~/Views/Shared/_layoutAdmin.cshtml";
+}
+
+<h2>SỬA TÀI KHOẢN</h2>
+
+
+<hr />
+<div class="row">
+    
+        <div class="container">
+            <form asp-action="SuaTaiKhoan" , enctype="multipart/form-data">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label class="control-label">Tên đăng nhập</label>
+                    <input asp-for="@Model.MaKh" class="form-control" />
+                    <span asp-validation-for="@Model.MaKh" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Mật khẩu</label>
+                    <input asp-for="@Model.MatKhau" class="form-control" />
+                    <span asp-validation-for="@Model.MatKhau" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Họ tên</label>
+                    <input asp-for="@Model.HoTen" class="form-control" />
+                    <span asp-validation-for="@Model.HoTen" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Giới tính</label>
+                    <div class="checkbox">
+                        <label>
+                            <input asp-for="@Model.GioiTinh" />Nam
+
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Ngày sinh</label>
+                    <input asp-for="@Model.NgaySinh" type="date" class="form-control" />
+                    <span asp-validation-for="@Model.NgaySinh" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Địa chỉ</label>
+                    <input asp-for="DiaChi" class="form-control" />
+                    <span asp-validation-for="DiaChi" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Điện thoại</label>
+                    <input asp-for="@Model.DienThoai" type="number" class="form-control" />
+                    <span asp-validation-for="@Model.DienThoai" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Email</label>
+                    <input asp-for="@Model.Email" type="email" class="form-control" />
+                    <span asp-validation-for="@Model.Email" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Hình ảnh</label>
+                    <input asp-for="@Model.Hinh" type="file" class="form-control" />
+                    <span asp-validation-for="@Model.Hinh" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <div class="checkbox">
+                        <label>
+                            <input asp-for="@Model.HieuLuc" /> @Html.DisplayNameFor(model => model.HieuLuc)
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Vai trò</label>
+                    <input asp-for="@Model.VaiTro" class="form-control" />
+                    <span asp-validation-for="@Model.VaiTro" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="@Model.RandomKey" class="control-label"></label>
+                    <input asp-for="@Model.RandomKey" class="form-control" />
+                    <span asp-validation-for="@Model.RandomKey" class="text-danger"></span>
+                </div>
+                <div class="form-group ">
+                    <button type="submit" style="width:150px" class="btn btn-default btn-danger ">Cập nhật</button>
+                </div>
+        </form>
+    </div>
+
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

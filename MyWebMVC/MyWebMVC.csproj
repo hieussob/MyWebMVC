@@ -1,0 +1,192 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\js\ace-editable.min.js" />
+    <None Include="wwwroot\js\ace-elements.min.js" />
+    <None Include="wwwroot\js\ace-extra.min.js" />
+    <None Include="wwwroot\js\ace.min.js" />
+    <None Include="wwwroot\js\autosize.min.js" />
+    <None Include="wwwroot\js\bootbox.js" />
+    <None Include="wwwroot\js\bootstrap-colorpicker.min.js" />
+    <None Include="wwwroot\js\bootstrap-datepicker.min.js" />
+    <None Include="wwwroot\js\bootstrap-datetimepicker.min.js" />
+    <None Include="wwwroot\js\bootstrap-editable.min.js" />
+    <None Include="wwwroot\js\bootstrap-markdown.min.js" />
+    <None Include="wwwroot\js\bootstrap-multiselect.min.js" />
+    <None Include="wwwroot\js\bootstrap-tag.min.js" />
+    <None Include="wwwroot\js\bootstrap-timepicker.min.js" />
+    <None Include="wwwroot\js\bootstrap-wysiwyg.min.js" />
+    <None Include="wwwroot\js\bootstrap.min.js" />
+    <None Include="wwwroot\js\buttons.colVis.min.js" />
+    <None Include="wwwroot\js\buttons.flash.min.js" />
+    <None Include="wwwroot\js\buttons.html5.min.js" />
+    <None Include="wwwroot\js\buttons.print.min.js" />
+    <None Include="wwwroot\js\chosen.jquery.min.js" />
+    <None Include="wwwroot\js\dataTables.buttons.min.js" />
+    <None Include="wwwroot\js\dataTables.select.min.js" />
+    <None Include="wwwroot\js\daterangepicker.min.js" />
+    <None Include="wwwroot\js\dropzone.min.js" />
+    <None Include="wwwroot\js\excanvas.min.js" />
+    <None Include="wwwroot\js\fullcalendar.min.js" />
+    <None Include="wwwroot\js\grid.locale-en.js" />
+    <None Include="wwwroot\js\holder.min.js" />
+    <None Include="wwwroot\js\html5shiv.min.js" />
+    <None Include="wwwroot\js\jquery-1.11.3.min.js" />
+    <None Include="wwwroot\js\jquery-2.1.4.min.js" />
+    <None Include="wwwroot\js\jquery-additional-methods.min.js" />
+    <None Include="wwwroot\js\jquery-typeahead.js" />
+    <None Include="wwwroot\js\jquery-ui.custom.min.js" />
+    <None Include="wwwroot\js\jquery-ui.min.js" />
+    <None Include="wwwroot\js\jquery.bootstrap-duallistbox.min.js" />
+    <None Include="wwwroot\js\jquery.colorbox.min.js" />
+    <None Include="wwwroot\js\jquery.dataTables.bootstrap.min.js" />
+    <None Include="wwwroot\js\jquery.dataTables.min.js" />
+    <None Include="wwwroot\js\jquery.easypiechart.min.js" />
+    <None Include="wwwroot\js\jquery.flot.min.js" />
+    <None Include="wwwroot\js\jquery.flot.pie.min.js" />
+    <None Include="wwwroot\js\jquery.flot.resize.min.js" />
+    <None Include="wwwroot\js\jquery.gritter.min.js" />
+    <None Include="wwwroot\js\jquery.hotkeys.index.min.js" />
+    <None Include="wwwroot\js\jquery.inputlimiter.min.js" />
+    <None Include="wwwroot\js\jquery.jqGrid.min.js" />
+    <None Include="wwwroot\js\jquery.knob.min.js" />
+    <None Include="wwwroot\js\jquery.maskedinput.min.js" />
+    <None Include="wwwroot\js\jquery.mobile.custom.min.js" />
+    <None Include="wwwroot\js\jquery.nestable.min.js" />
+    <None Include="wwwroot\js\jquery.raty.min.js" />
+    <None Include="wwwroot\js\jquery.sparkline.index.min.js" />
+    <None Include="wwwroot\js\jquery.ui.touch-punch.min.js" />
+    <None Include="wwwroot\js\jquery.validate.min.js" />
+    <None Include="wwwroot\js\main.js" />
+    <None Include="wwwroot\js\markdown.min.js" />
+    <None Include="wwwroot\js\moment.min.js" />
+    <None Include="wwwroot\js\prettify.min.js" />
+    <None Include="wwwroot\js\respond.min.js" />
+    <None Include="wwwroot\js\select2.min.js" />
+    <None Include="wwwroot\js\spin.js" />
+    <None Include="wwwroot\js\spinbox.min.js" />
+    <None Include="wwwroot\js\tree.min.js" />
+    <None Include="wwwroot\js\wizard.min.js" />
+    <None Include="wwwroot\lib\counterup\counterup.min.js" />
+    <None Include="wwwroot\lib\easing\easing.js" />
+    <None Include="wwwroot\lib\easing\easing.min.js" />
+    <None Include="wwwroot\lib\isotope\isotope.pkgd.js" />
+    <None Include="wwwroot\lib\isotope\isotope.pkgd.min.js" />
+    <None Include="wwwroot\lib\lightbox\js\lightbox.js" />
+    <None Include="wwwroot\lib\lightbox\js\lightbox.min.js" />
+    <None Include="wwwroot\lib\lightbox\links.php" />
+    <None Include="wwwroot\lib\owlcarousel\LICENSE" />
+    <None Include="wwwroot\lib\owlcarousel\owl.carousel.js" />
+    <None Include="wwwroot\lib\owlcarousel\owl.carousel.min.js" />
+    <None Include="wwwroot\lib\waypoints\links.php" />
+    <None Include="wwwroot\lib\waypoints\waypoints.min.js" />
+    <None Include="wwwroot\lib\wow\wow.js" />
+    <None Include="wwwroot\lib\wow\wow.min.js" />
+    <None Include="wwwroot\scss\bootstrap.scss" />
+    <None Include="wwwroot\scss\bootstrap\scss\bootstrap-grid.scss" />
+    <None Include="wwwroot\scss\bootstrap\scss\bootstrap-reboot.scss" />
+    <None Include="wwwroot\scss\bootstrap\scss\bootstrap-utilities.scss" />
+    <None Include="wwwroot\scss\bootstrap\scss\bootstrap.scss" />
+    <None Include="wwwroot\scss\bootstrap\scss\forms\_floating-labels.scss" />
+    <None Include="wwwroot\scss\bootstrap\scss\forms\_form-check.scss" />
+    <None Include="wwwroot\scss\bootstrap\scss\forms\_form-control.scss" />
+    <None Include="wwwroot\scss\bootstrap\scss\forms\_form-range.scss" />
+    <None Include="wwwroot\scss\bootstrap\scss\forms\_form-select.scss" />
+    <None Include="wwwroot\scss\bootstrap\scss\forms\_form-text.scss" />
+    <None Include="wwwroot\scss\bootstrap\scss\forms\_input-group.scss" />
+    <None Include="wwwroot\scss\bootstrap\scss\forms\_labels.scss" />
+    <None Include="wwwroot\scss\bootstrap\scss\forms\_validation.scss" />
+    <None Include="wwwroot\scss\bootstrap\scss\helpers\_clearfix.scss" />
+    <None Include="wwwroot\scss\bootstrap\scss\helpers\_colored-links.scss" />
+    <None Include="wwwroot\scss\bootstrap\scss\helpers\_position.scss" />
+    <None Include="wwwroot\scss\bootstrap\scss\helpers\_ratio.scss" />
+    <None Include="wwwroot\scss\bootstrap\scss\helpers\_stretched-link.scss" />
+    <None Include="wwwroot\scss\bootstrap\scss\helpers\_text-truncation.scss" />
+    <None Include="wwwroot\scss\bootstrap\scss\helpers\_visually-hidden.scss" />
+    <None Include="wwwroot\scss\bootstrap\scss\mixins\_alert.scss" />
+    <None Include="wwwroot\scss\bootstrap\scss\mixins\_border-radius.scss" />
+    <None Include="wwwroot\scss\bootstrap\scss\mixins\_box-shadow.scss" />
+    <None Include="wwwroot\scss\bootstrap\scss\mixins\_breakpoints.scss" />
+    <None Include="wwwroot\scss\bootstrap\scss\mixins\_buttons.scss" />
+    <None Include="wwwroot\scss\bootstrap\scss\mixins\_caret.scss" />
+    <None Include="wwwroot\scss\bootstrap\scss\mixins\_clearfix.scss" />
+    <None Include="wwwroot\scss\bootstrap\scss\mixins\_color-scheme.scss" />
+    <None Include="wwwroot\scss\bootstrap\scss\mixins\_container.scss" />
+    <None Include="wwwroot\scss\bootstrap\scss\mixins\_deprecate.scss" />
+    <None Include="wwwroot\scss\bootstrap\scss\mixins\_forms.scss" />
+    <None Include="wwwroot\scss\bootstrap\scss\mixins\_gradients.scss" />
+    <None Include="wwwroot\scss\bootstrap\scss\mixins\_grid.scss" />
+    <None Include="wwwroot\scss\bootstrap\scss\mixins\_image.scss" />
+    <None Include="wwwroot\scss\bootstrap\scss\mixins\_list-group.scss" />
+    <None Include="wwwroot\scss\bootstrap\scss\mixins\_lists.scss" />
+    <None Include="wwwroot\scss\bootstrap\scss\mixins\_pagination.scss" />
+    <None Include="wwwroot\scss\bootstrap\scss\mixins\_reset-text.scss" />
+    <None Include="wwwroot\scss\bootstrap\scss\mixins\_resize.scss" />
+    <None Include="wwwroot\scss\bootstrap\scss\mixins\_table-variants.scss" />
+    <None Include="wwwroot\scss\bootstrap\scss\mixins\_text-truncate.scss" />
+    <None Include="wwwroot\scss\bootstrap\scss\mixins\_transition.scss" />
+    <None Include="wwwroot\scss\bootstrap\scss\mixins\_utilities.scss" />
+    <None Include="wwwroot\scss\bootstrap\scss\mixins\_visually-hidden.scss" />
+    <None Include="wwwroot\scss\bootstrap\scss\utilities\_api.scss" />
+    <None Include="wwwroot\scss\bootstrap\scss\vendor\_rfs.scss" />
+    <None Include="wwwroot\scss\bootstrap\scss\_accordion.scss" />
+    <None Include="wwwroot\scss\bootstrap\scss\_alert.scss" />
+    <None Include="wwwroot\scss\bootstrap\scss\_badge.scss" />
+    <None Include="wwwroot\scss\bootstrap\scss\_breadcrumb.scss" />
+    <None Include="wwwroot\scss\bootstrap\scss\_button-group.scss" />
+    <None Include="wwwroot\scss\bootstrap\scss\_buttons.scss" />
+    <None Include="wwwroot\scss\bootstrap\scss\_card.scss" />
+    <None Include="wwwroot\scss\bootstrap\scss\_carousel.scss" />
+    <None Include="wwwroot\scss\bootstrap\scss\_close.scss" />
+    <None Include="wwwroot\scss\bootstrap\scss\_containers.scss" />
+    <None Include="wwwroot\scss\bootstrap\scss\_dropdown.scss" />
+    <None Include="wwwroot\scss\bootstrap\scss\_forms.scss" />
+    <None Include="wwwroot\scss\bootstrap\scss\_functions.scss" />
+    <None Include="wwwroot\scss\bootstrap\scss\_grid.scss" />
+    <None Include="wwwroot\scss\bootstrap\scss\_helpers.scss" />
+    <None Include="wwwroot\scss\bootstrap\scss\_images.scss" />
+    <None Include="wwwroot\scss\bootstrap\scss\_list-group.scss" />
+    <None Include="wwwroot\scss\bootstrap\scss\_mixins.scss" />
+    <None Include="wwwroot\scss\bootstrap\scss\_modal.scss" />
+    <None Include="wwwroot\scss\bootstrap\scss\_nav.scss" />
+    <None Include="wwwroot\scss\bootstrap\scss\_navbar.scss" />
+    <None Include="wwwroot\scss\bootstrap\scss\_offcanvas.scss" />
+    <None Include="wwwroot\scss\bootstrap\scss\_pagination.scss" />
+    <None Include="wwwroot\scss\bootstrap\scss\_popover.scss" />
+    <None Include="wwwroot\scss\bootstrap\scss\_progress.scss" />
+    <None Include="wwwroot\scss\bootstrap\scss\_reboot.scss" />
+    <None Include="wwwroot\scss\bootstrap\scss\_root.scss" />
+    <None Include="wwwroot\scss\bootstrap\scss\_spinners.scss" />
+    <None Include="wwwroot\scss\bootstrap\scss\_tables.scss" />
+    <None Include="wwwroot\scss\bootstrap\scss\_toasts.scss" />
+    <None Include="wwwroot\scss\bootstrap\scss\_tooltip.scss" />
+    <None Include="wwwroot\scss\bootstrap\scss\_transitions.scss" />
+    <None Include="wwwroot\scss\bootstrap\scss\_type.scss" />
+    <None Include="wwwroot\scss\bootstrap\scss\_utilities.scss" />
+    <None Include="wwwroot\scss\bootstrap\scss\_variables.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.27" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.27" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.27">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.16" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Areas\User\Controllers\" />
+    <Folder Include="Areas\User\Data\" />
+    <Folder Include="Areas\User\Models\" />
+    <Folder Include="Areas\User\Views\" />
+  </ItemGroup>
+
+</Project>

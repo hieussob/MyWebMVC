@@ -1,0 +1,96 @@
+﻿@model IEnumerable<MyWebMVC.Data.HangHoa>
+
+@{
+    ViewData["Title"] = "Danh Sách Sản Phẩm";
+    Layout = "~/Views/Shared/_layoutAdmin.cshtml";
+}
+
+<h2>DANH SÁCH SẢN PHẨM</h2>
+
+<div class="btn btn-success float-right">
+    <a asp-action="ThemMoiSanPham">Thêm mới</a>
+</div>
+<table class="table table-responsive">
+    <thead>
+        <tr>
+            <th>
+                Tên sản phẩm
+            </th>
+            <th>
+                Tên Alias
+            </th>
+            <th>
+                Mô tả đơn vị
+            </th>
+            <th>
+                Đơn giá
+            </th>
+            <th>
+                Hình ảnh
+            </th>
+            <th>
+                Ngày sản xuất
+            </th>
+            <th>
+                Giảm giá
+            </th>
+            <th>
+                Số lần xem
+            </th>
+            <th>
+                Mô tả
+            </th>
+            <th>
+                Mã loại
+            </th>
+            <th>
+                Mã nhà cung cấp
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TenHh)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TenAlias)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.MoTaDonVi)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DonGia)
+                </td>
+                <td>
+                    <img style="width:100px; height:100px" src="~/Hinh/HangHoa/@item.Hinh"></img>
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NgaySx)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.GiamGia)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SoLanXem)
+                </td>
+                <td style="width: 180px!important">
+                    @Html.DisplayFor(modelItem => item.MoTa)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.MaLoaiNavigation.MaLoai)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.MaNccNavigation.MaNcc)
+                </td>
+                <td>
+                    <a asp-action="CapNhatSanPham" asp-route-id="@item.MaHh">Sửa</a> |
+                    <a asp-action="XoaSanPham" asp-route-id="@item.MaHh">Xóa</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,42 @@
+﻿@model MyWebMVC.Data.Loai
+
+@{
+    ViewData["Title"] = "Cập nhật Danh Mục";
+    Layout = "~/Views/Shared/_layoutAdmin.cshtml";
+}
+
+<h2>CẬP NHẬT DANH MỤC</h2>
+
+
+<hr />
+<div class="row">
+
+        <form asp-action="CapNhatDanhMuc" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="MaLoai" />
+            <div class="form-group">
+                <label class="control-label">Tên loại</label>
+                <input asp-for="TenLoai" class="form-control" />
+                <span asp-validation-for="TenLoai" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label  class="control-label">Tên loại Alias</label>
+                <input asp-for="TenLoaiAlias" class="form-control" />
+                <span asp-validation-for="TenLoaiAlias" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label class="control-label">Mô tả</label>
+                <input asp-for="MoTa" class="form-control" />
+                <span asp-validation-for="MoTa" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label class="control-label">Hình ảnh</label>
+                <img src="~/Hinh/Loai/@Model.Hinh"></img>
+                <input asp-for="Hinh" type="file" class="form-control" />
+                <span asp-validation-for="Hinh" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <button type="submit" value="Save" class="btn btn-default btn-danger"> Cập nhật</button>
+            </div>
+        </form>
+    </div>

@@ -1,0 +1,37 @@
+﻿@model IEnumerable<MyWebMVC.ViewModels.HangHoaVM>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_LayoutCustomAll.cshtml";
+    Layout = "_DanhSachHangHoa";
+    ViewBag.active = 2;
+    ViewBag.layout = " / Cửa hàng / ";
+    ViewBag.layoutDetail = " Chi tiết sản phẩm";
+
+}
+
+
+<div>Có<b> @Model.Count() </b> sản phẩm</div>    
+@foreach (var item in Model)
+{
+    <div class="col-md-6 col-lg-6 col-xl-4">
+        <div class="rounded position-relative fruite-item">
+            <div class="fruite-img">
+                    <a asp-controller="HangHoa" asp-action="Detail" asp-route-maHangHoa="@item.MaHangHoa"> 
+                            <img src="~/Hinh/HangHoa/@item.Hinh" class="img-fluid w-100 rounded-top" alt="@item.TenHangHoa">
+                    </a>
+                
+            </div>
+            <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">@item.TenLoai</div>
+            <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                            <a asp-controller="HangHoa" asp-action="Detail" asp-route-maHangHoa="@item.MaHangHoa"><h4>@item.TenHangHoa</h4></a>
+                            <a asp-controller="HangHoa" asp-action="Detail" asp-route-maHangHoa="@item.MaHangHoa"><p>@item.MoTaNgan</p></a>
+                <div class="d-flex justify-content-between flex-lg-wrap">
+                    <p class="text-dark fs-5 fw-bold mb-0">@item.DonGia</p>
+                                    <a asp-controller="Cart" asp-action="AddToCart" asp-route-id="@item.MaHangHoa" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i>Thêm vào giỏ</a>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+        <!-- Fruits Shop End-->
+

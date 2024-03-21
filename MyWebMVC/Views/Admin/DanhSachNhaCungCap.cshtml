@@ -1,0 +1,73 @@
+﻿@model IEnumerable<MyWebMVC.Data.NhaCungCap>
+
+@{
+    ViewData["Title"] = "Danh sách nhà cung cấp";
+    Layout = "~/Views/Shared/_layoutAdmin.cshtml";
+}
+
+<h2>DANH SÁCH NHÀ CUNG CẤP</h2>
+
+<div class="btn btn-success float-right" style="width:100px">
+    <a asp-action="ThemNCC">Thêm mới</a>
+</div>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Tên công ty
+            </th>
+            <th>
+                Logo
+            </th>
+            <th>
+                Người liên lạc
+            </th>
+            <th>
+                Email
+            </th>
+            <th>
+                Điện thoại
+            </th>
+            <th>
+                Địa chỉ
+            </th>
+            <th>
+                Mô tả
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.TenCongTy)
+            </td>
+            <td>
+                <img style="width :50px; height:50px"  src="~/Hinh/NhaCC/@item.Logo">
+                <img />
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NguoiLienLac)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DienThoai)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DiaChi)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MoTa)
+            </td>
+            <td>
+                <a asp-action="CapNhatNCC" asp-route-id="@item.MaNcc">Edit</a> |
+               
+                <a asp-action="XoaNCC" asp-route-id="@item.MaNcc">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
