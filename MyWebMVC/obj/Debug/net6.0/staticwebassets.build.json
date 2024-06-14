@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "LwamXc7wyPvujE8f/lSd10B834GXbkEjji7+YmtTyc4=",
+  "Hash": "JDBVBdoN6lgyoiqeCAr0zFR/31Jyoo7MI6Jh8we7mfA=",
   "Source": "MyWebMVC",
   "BasePath": "_content/MyWebMVC",
   "Mode": "Default",
@@ -6439,6 +6439,25 @@
       "OriginalItemSpec": "wwwroot\\img\\avatar.jpg"
     },
     {
+      "Identity": "D:\\Documents\\Csharp\\ASP\\MyWebMVC\\wwwroot\\img\\background_header.jpg",
+      "SourceId": "MyWebMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Documents\\Csharp\\ASP\\MyWebMVC\\wwwroot\\",
+      "BasePath": "_content/MyWebMVC",
+      "RelativePath": "img/background_header.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\background_header.jpg"
+    },
+    {
       "Identity": "D:\\Documents\\Csharp\\ASP\\MyWebMVC\\wwwroot\\img\\baner-1.png",
       "SourceId": "MyWebMVC",
       "SourceType": "Discovered",
@@ -6589,6 +6608,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\best-product-6.jpg"
+    },
+    {
+      "Identity": "D:\\Documents\\Csharp\\ASP\\MyWebMVC\\wwwroot\\img\\bg_1.jpg",
+      "SourceId": "MyWebMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Documents\\Csharp\\ASP\\MyWebMVC\\wwwroot\\",
+      "BasePath": "_content/MyWebMVC",
+      "RelativePath": "img/bg_1.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\bg_1.jpg"
     },
     {
       "Identity": "D:\\Documents\\Csharp\\ASP\\MyWebMVC\\wwwroot\\img\\carousel-1.jpg",

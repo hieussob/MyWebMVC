@@ -1,9 +1,16 @@
-﻿@model IEnumerable<MyWebMVC.Data.HangHoa>
+﻿@model X.PagedList.IPagedList<MyWebMVC.Data.HangHoa>
 
 @{
     ViewData["Title"] = "Danh Sách Sản Phẩm";
     Layout = "~/Views/Shared/_layoutAdmin.cshtml";
 }
+
+@using X.PagedList.Mvc.Core
+
+<form style="float:right" asp-action="SearchByName" asp-controller="Admin">
+    <input id="namePro" name="namePro" type="text" style="width:200px;height:30px; border-radius:30px;" placeholder="Nhập tên sản phẩm"/>
+    <input type="submit" style="background-color:antiquewhite; border-radius:3px" title="Filter" /> 
+</form>
 
 <h2>DANH SÁCH SẢN PHẨM</h2>
 
@@ -94,3 +101,35 @@
         }
     </tbody>
 </table>
+
+<div class="col-12">
+    @Html.PagedListPager(Model, page => Url.Action("DanhSachSanPham", new { page = page }))
+</div>
+<style>
+    ul.pagination {
+        display: flex;
+        justify-content: center;
+    }
+
+        ul.pagination li {
+            width: 43px;
+            border-radius: 3px;
+            text-align: center;
+            border: 1px solid #000;
+            height: 43px;
+            line-height: 43px;
+            margin-top: -10px;
+            margin-right: 2px;
+        }
+
+            ul.pagination li.active {
+                background-color: green !important;
+                width: 42px !important;
+                height: 43px;
+                padding-bottom: 21px;
+                margin-top: -10px;
+                text-align: center;
+                line-height: 43px;
+                color: white;
+            }
+</style>

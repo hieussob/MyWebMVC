@@ -1,12 +1,17 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using ClosedXML.Excel;
+using DocumentFormat.OpenXml.InkML;
+using DocumentFormat.OpenXml.Office2016.Drawing.ChartDrawing;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using MyWebMVC.Data;
 using MyWebMVC.Helpers;
 using MyWebMVC.ViewModels;
+using Newtonsoft.Json;
 using System.ComponentModel.DataAnnotations;
 using System.Security.Cryptography.X509Certificates;
+using X.PagedList;
 
 namespace MyWebMVC.Controllers
 {
@@ -98,7 +103,6 @@ namespace MyWebMVC.Controllers
 
         public IActionResult SuaTaiKhoan(KhachHang model, IFormFile? Hinh)
         {
-
             if (ModelState.IsValid)
             {
                 try
@@ -237,10 +241,23 @@ namespace MyWebMVC.Controllers
 
         #region Quản lý sản phẩm
         [Route("danhsachsanpham")]
-        public IActionResult DanhSachSanPham()
+        public IActionResult DanhSachSanPham(int ?page)
         {
+            int pageSize = 10;
+            int pageNumber = page == null || page < 0 ? 1 : page.Value;
+            
             var danhSachSanPham = db.HangHoas.Include(p => p.MaLoaiNavigation).Include(p => p.MaNccNavigation).ToList();
-            return View(danhSachSanPham);
+            PagedList<HangHoa> list = new PagedList<HangHoa>(danhSachSanPham, pageNumber, pageSize);
+            return View(list);
+        }
+
+        public IActionResult SearchByName(string? namePro, int ?page)
+        {
+            int pageSize = 10;
+            int pageNumber = page == null || page<0?1:page.Value;
+            var danhSach = db.HangHoas.Where(p => p.TenHh.Contains(namePro)).ToList();
+            PagedList<HangHoa> list = new PagedList<HangHoa>(danhSach, pageNumber, pageSize);
+            return View(list);
         }
 
         [HttpGet]
@@ -520,9 +537,143 @@ namespace MyWebMVC.Controllers
         }
         #endregion
 
+        
+
+        [HttpGet]
+        public IActionResult CapNhatDonHang(int ?id)
+        {
+            var donHangCapNhat = db.HoaDons.SingleOrDefault(p => p.MaHd == id);
+            return View(donHangCapNhat);
+        }
+
+        [HttpPost]
+        public IActionResult CapNhatDonHang(HoaDon model)
+        {
+            var donHangCapNhat = db.HoaDons.SingleOrDefault(p=>p.MaHd == model.MaHd);
+            donHangCapNhat.MaTrangThai = model.MaTrangThai;
+            db.SaveChanges();
+            return RedirectToAction("DanhSachDonHang");
+            
+        }
+
+        
+        public IActionResult XoaDonHang(int id)
+        {
+            var donHangXoa = db.HoaDons.SingleOrDefault(p => p.MaHd == id);
+            db.RemoveRange(donHangXoa);
+            db.SaveChanges();
+            return RedirectToAction("DanhSachDonHang");
+        }
+
+
         public IActionResult Test()
         {
             return View();
         }
+
+        [HttpGet]
+        public IActionResult ThongKe(string period)
+        {
+            var statistics = new List<StatisticVM>();
+
+            var orderDetails = db.HoaDons
+                .Join(db.ChiTietHds,
+                      hd => hd.MaHd,
+                      ct => ct.MaHd,
+                      (hd, ct) => new { hd.NgayDat, ct.DonGia, ct.SoLuong })
+                .ToList();
+
+            switch (period?.ToLower())
+            {
+                case "day":
+                    statistics = orderDetails
+                        .GroupBy(o => o.NgayDat.Date)
+                        .Select(g => new StatisticVM
+                        {
+                            Period = g.Key.ToString("yyyy-MM-dd"),
+                            OrderCount = g.Count(),
+                            TotalRevenue = g.Sum(x => x.DonGia * x.SoLuong)
+                        })
+                        .ToList();
+                    break;
+
+                case "month":
+                    statistics = orderDetails
+                        .GroupBy(o => new { o.NgayDat.Year, o.NgayDat.Month })
+                        .Select(g => new StatisticVM
+                        {
+                            Period = $"{g.Key.Year}-{g.Key.Month}",
+                            OrderCount = g.Count(),
+                            TotalRevenue = g.Sum(x => x.DonGia * x.SoLuong)
+                        })
+                        .ToList();
+                    break;
+
+                case "year":
+                    statistics = orderDetails
+                        .GroupBy(o => o.NgayDat.Year)
+                        .Select(g => new StatisticVM
+                        {
+                            Period = g.Key.ToString(),
+                            OrderCount = g.Count(),
+                            TotalRevenue = g.Sum(x => x.DonGia * x.SoLuong)
+                        })
+                        .ToList();
+                    break;
+
+                default:
+                    return BadRequest("Invalid period parameter");
+            }
+            ViewBag.soLieu = JsonConvert.SerializeObject(statistics);
+            ViewBag.period = "day";
+
+            return View(statistics);
+        }
+
+        [HttpPost]
+        public IActionResult ExportExcel(string soLieu, string period)
+        {
+            var statistics = JsonConvert.DeserializeObject<List<StatisticVM>>(soLieu);
+
+            var folderPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "ExportToExcel");
+            if (!Directory.Exists(folderPath))
+            {
+                Directory.CreateDirectory(folderPath);
+            }
+
+            var filePath = Path.Combine(folderPath, $"Thống kê - {period}.xlsx");
+
+            using (var workbook = new XLWorkbook())
+            {
+                var worksheet = workbook.Worksheets.Add("Thống  kê");
+
+                // Đặt tiêu đề cột
+                worksheet.Cell(1, 1).Value = "Doanh thu theo" + period;
+                worksheet.Cell(1, 2).Value = "Tổng đơn đặt hàng";
+                worksheet.Cell(1, 3).Value = "Tổng doanh thu";
+
+                // Đặt dữ liệu vào bảng tính
+                for (int i = 0; i < statistics.Count; i++)
+                {
+                    worksheet.Cell(i + 2, 1).Value = statistics[i].Period;
+                    worksheet.Cell(i + 2, 2).Value = statistics[i].OrderCount;
+                    worksheet.Cell(i + 2, 3).Value = statistics[i].TotalRevenue;
+                }
+
+                // Định dạng tiêu đề
+                var headerRange = worksheet.Range("A1:C1");
+                headerRange.Style.Font.Bold = true;
+                headerRange.Style.Fill.BackgroundColor = XLColor.LightGray;
+
+                worksheet.Columns().AdjustToContents();
+                workbook.SaveAs(filePath);
+            }
+
+            var stream = new MemoryStream(System.IO.File.ReadAllBytes(filePath));
+            stream.Position = 0;
+            return File(stream, "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", Path.GetFileName(filePath));
+        }
     }
+
+    
 }

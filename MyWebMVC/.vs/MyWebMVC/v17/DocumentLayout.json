@@ -3,60 +3,48 @@
   "WorkspaceRootPath": "D:\\Documents\\Csharp\\ASP\\MyWebMVC\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D694936B-84B6-4E24-A5ED-386F7DBD7489}|MyWebMVC.csproj|d:\\documents\\csharp\\asp\\mywebmvc\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D694936B-84B6-4E24-A5ED-386F7DBD7489}|MyWebMVC.csproj|solutionrelative:controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D694936B-84B6-4E24-A5ED-386F7DBD7489}|MyWebMVC.csproj|d:\\documents\\csharp\\asp\\mywebmvc\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D694936B-84B6-4E24-A5ED-386F7DBD7489}|MyWebMVC.csproj|solutionrelative:controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D694936B-84B6-4E24-A5ED-386F7DBD7489}|MyWebMVC.csproj|d:\\documents\\csharp\\asp\\mywebmvc\\views\\admin\\danhsachtaikhoan.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D694936B-84B6-4E24-A5ED-386F7DBD7489}|MyWebMVC.csproj|solutionrelative:views\\admin\\danhsachtaikhoan.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{D694936B-84B6-4E24-A5ED-386F7DBD7489}|MyWebMVC.csproj|d:\\documents\\csharp\\asp\\mywebmvc\\views\\admin\\thongke.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D694936B-84B6-4E24-A5ED-386F7DBD7489}|MyWebMVC.csproj|solutionrelative:views\\admin\\thongke.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D694936B-84B6-4E24-A5ED-386F7DBD7489}|MyWebMVC.csproj|d:\\documents\\csharp\\asp\\mywebmvc\\services\\vnpayservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D694936B-84B6-4E24-A5ED-386F7DBD7489}|MyWebMVC.csproj|solutionrelative:services\\vnpayservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D694936B-84B6-4E24-A5ED-386F7DBD7489}|MyWebMVC.csproj|d:\\documents\\csharp\\asp\\mywebmvc\\views\\shared\\_layoutadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D694936B-84B6-4E24-A5ED-386F7DBD7489}|MyWebMVC.csproj|solutionrelative:views\\shared\\_layoutadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D694936B-84B6-4E24-A5ED-386F7DBD7489}|MyWebMVC.csproj|d:\\documents\\csharp\\asp\\mywebmvc\\views\\admin\\suataikhoan.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D694936B-84B6-4E24-A5ED-386F7DBD7489}|MyWebMVC.csproj|solutionrelative:views\\admin\\suataikhoan.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{D694936B-84B6-4E24-A5ED-386F7DBD7489}|MyWebMVC.csproj|d:\\documents\\csharp\\asp\\mywebmvc\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D694936B-84B6-4E24-A5ED-386F7DBD7489}|MyWebMVC.csproj|solutionrelative:controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D694936B-84B6-4E24-A5ED-386F7DBD7489}|MyWebMVC.csproj|d:\\documents\\csharp\\asp\\mywebmvc\\services\\ivnpayservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D694936B-84B6-4E24-A5ED-386F7DBD7489}|MyWebMVC.csproj|solutionrelative:services\\ivnpayservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D694936B-84B6-4E24-A5ED-386F7DBD7489}|MyWebMVC.csproj|d:\\documents\\csharp\\asp\\mywebmvc\\views\\admin\\test.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D694936B-84B6-4E24-A5ED-386F7DBD7489}|MyWebMVC.csproj|solutionrelative:views\\admin\\test.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D694936B-84B6-4E24-A5ED-386F7DBD7489}|MyWebMVC.csproj|d:\\documents\\csharp\\asp\\mywebmvc\\controllers\\khachhangcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D694936B-84B6-4E24-A5ED-386F7DBD7489}|MyWebMVC.csproj|solutionrelative:controllers\\khachhangcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D694936B-84B6-4E24-A5ED-386F7DBD7489}|MyWebMVC.csproj|d:\\documents\\csharp\\asp\\mywebmvc\\viewmodels\\statisticvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D694936B-84B6-4E24-A5ED-386F7DBD7489}|MyWebMVC.csproj|solutionrelative:viewmodels\\statisticvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D694936B-84B6-4E24-A5ED-386F7DBD7489}|MyWebMVC.csproj|d:\\documents\\csharp\\asp\\mywebmvc\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{D694936B-84B6-4E24-A5ED-386F7DBD7489}|MyWebMVC.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{D694936B-84B6-4E24-A5ED-386F7DBD7489}|MyWebMVC.csproj|d:\\documents\\csharp\\asp\\mywebmvc\\views\\admin\\danhsachdonhang.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D694936B-84B6-4E24-A5ED-386F7DBD7489}|MyWebMVC.csproj|solutionrelative:views\\admin\\danhsachdonhang.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D694936B-84B6-4E24-A5ED-386F7DBD7489}|MyWebMVC.csproj|d:\\documents\\csharp\\asp\\mywebmvc\\viewmodels\\vnpaymentresponsemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D694936B-84B6-4E24-A5ED-386F7DBD7489}|MyWebMVC.csproj|solutionrelative:viewmodels\\vnpaymentresponsemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D694936B-84B6-4E24-A5ED-386F7DBD7489}|MyWebMVC.csproj|d:\\documents\\csharp\\asp\\mywebmvc\\data\\hoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D694936B-84B6-4E24-A5ED-386F7DBD7489}|MyWebMVC.csproj|solutionrelative:data\\hoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D694936B-84B6-4E24-A5ED-386F7DBD7489}|MyWebMVC.csproj|d:\\documents\\csharp\\asp\\mywebmvc\\views\\admin\\capnhatdonhang.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D694936B-84B6-4E24-A5ED-386F7DBD7489}|MyWebMVC.csproj|solutionrelative:views\\admin\\capnhatdonhang.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D694936B-84B6-4E24-A5ED-386F7DBD7489}|MyWebMVC.csproj|d:\\documents\\csharp\\asp\\mywebmvc\\views\\admin\\searchbyname.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D694936B-84B6-4E24-A5ED-386F7DBD7489}|MyWebMVC.csproj|solutionrelative:views\\admin\\searchbyname.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D694936B-84B6-4E24-A5ED-386F7DBD7489}|MyWebMVC.csproj|d:\\documents\\csharp\\asp\\mywebmvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D694936B-84B6-4E24-A5ED-386F7DBD7489}|MyWebMVC.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D694936B-84B6-4E24-A5ED-386F7DBD7489}|MyWebMVC.csproj|d:\\documents\\csharp\\asp\\mywebmvc\\views\\cart\\thanhtoandonhang.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D694936B-84B6-4E24-A5ED-386F7DBD7489}|MyWebMVC.csproj|solutionrelative:views\\cart\\thanhtoandonhang.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D694936B-84B6-4E24-A5ED-386F7DBD7489}|MyWebMVC.csproj|d:\\documents\\csharp\\asp\\mywebmvc\\helpers\\myconstant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D694936B-84B6-4E24-A5ED-386F7DBD7489}|MyWebMVC.csproj|solutionrelative:helpers\\myconstant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D694936B-84B6-4E24-A5ED-386F7DBD7489}|MyWebMVC.csproj|d:\\documents\\csharp\\asp\\mywebmvc\\helpers\\vnpaylibrary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D694936B-84B6-4E24-A5ED-386F7DBD7489}|MyWebMVC.csproj|solutionrelative:helpers\\vnpaylibrary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D694936B-84B6-4E24-A5ED-386F7DBD7489}|MyWebMVC.csproj|d:\\documents\\csharp\\asp\\mywebmvc\\data\\nhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D694936B-84B6-4E24-A5ED-386F7DBD7489}|MyWebMVC.csproj|solutionrelative:data\\nhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -66,188 +54,149 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 12,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e506b91c-c606-466a-90a9-123d1d1e12b3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CartController.cs",
-              "DocumentMoniker": "D:\\Documents\\Csharp\\ASP\\MyWebMVC\\Controllers\\CartController.cs",
-              "RelativeDocumentMoniker": "Controllers\\CartController.cs",
-              "ToolTip": "D:\\Documents\\Csharp\\ASP\\MyWebMVC\\Controllers\\CartController.cs",
-              "RelativeToolTip": "Controllers\\CartController.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAAABUAAAAEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-19T16:08:09.133Z",
+              "DocumentIndex": 2,
+              "Title": "_layoutAdmin.cshtml",
+              "DocumentMoniker": "D:\\Documents\\Csharp\\ASP\\MyWebMVC\\Views\\Shared\\_layoutAdmin.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_layoutAdmin.cshtml",
+              "ToolTip": "D:\\Documents\\Csharp\\ASP\\MyWebMVC\\Views\\Shared\\_layoutAdmin.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_layoutAdmin.cshtml",
+              "ViewState": "AQIAAHgAAAAAAAAAAAAAAIYAAABzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-14T04:39:28.167Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Test.cshtml",
+              "DocumentMoniker": "D:\\Documents\\Csharp\\ASP\\MyWebMVC\\Views\\Admin\\Test.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\Test.cshtml",
+              "ToolTip": "D:\\Documents\\Csharp\\ASP\\MyWebMVC\\Views\\Admin\\Test.cshtml",
+              "RelativeToolTip": "Views\\Admin\\Test.cshtml",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAMwAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-14T03:07:15.562Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ThongKe.cshtml",
+              "DocumentMoniker": "D:\\Documents\\Csharp\\ASP\\MyWebMVC\\Views\\Admin\\ThongKe.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\ThongKe.cshtml",
+              "ToolTip": "D:\\Documents\\Csharp\\ASP\\MyWebMVC\\Views\\Admin\\ThongKe.cshtml",
+              "RelativeToolTip": "Views\\Admin\\ThongKe.cshtml",
+              "ViewState": "AQIAABAAAAAAAAAAAAAAACMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-14T02:59:00.786Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "VnPayService.cs",
-              "DocumentMoniker": "D:\\Documents\\Csharp\\ASP\\MyWebMVC\\Services\\VnPayService.cs",
-              "RelativeDocumentMoniker": "Services\\VnPayService.cs",
-              "ToolTip": "D:\\Documents\\Csharp\\ASP\\MyWebMVC\\Services\\VnPayService.cs",
-              "RelativeToolTip": "Services\\VnPayService.cs",
-              "ViewState": "AQIAADQAAAAAAAAAAAAnwEcAAAAIAAAA",
+              "Title": "CartController.cs",
+              "DocumentMoniker": "D:\\Documents\\Csharp\\ASP\\MyWebMVC\\Controllers\\CartController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CartController.cs",
+              "ToolTip": "D:\\Documents\\Csharp\\ASP\\MyWebMVC\\Controllers\\CartController.cs",
+              "RelativeToolTip": "Controllers\\CartController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAGEAAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-19T16:03:28.748Z",
+              "WhenOpened": "2024-06-14T02:56:52.633Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "IVnPayService.cs",
-              "DocumentMoniker": "D:\\Documents\\Csharp\\ASP\\MyWebMVC\\Services\\IVnPayService.cs",
-              "RelativeDocumentMoniker": "Services\\IVnPayService.cs",
-              "ToolTip": "D:\\Documents\\Csharp\\ASP\\MyWebMVC\\Services\\IVnPayService.cs",
-              "RelativeToolTip": "Services\\IVnPayService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAcAAAAPAAAA",
+              "Title": "StatisticVM.cs",
+              "DocumentMoniker": "D:\\Documents\\Csharp\\ASP\\MyWebMVC\\ViewModels\\StatisticVM.cs",
+              "RelativeDocumentMoniker": "ViewModels\\StatisticVM.cs",
+              "ToolTip": "D:\\Documents\\Csharp\\ASP\\MyWebMVC\\ViewModels\\StatisticVM.cs",
+              "RelativeToolTip": "ViewModels\\StatisticVM.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAxwAQAAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-19T15:59:28.505Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-14T02:49:56.759Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\Documents\\Csharp\\ASP\\MyWebMVC\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "D:\\Documents\\Csharp\\ASP\\MyWebMVC\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAA0AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-03-19T15:53:15.238Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AdminController.cs",
-              "DocumentMoniker": "D:\\Documents\\Csharp\\ASP\\MyWebMVC\\Controllers\\AdminController.cs",
-              "RelativeDocumentMoniker": "Controllers\\AdminController.cs",
-              "ToolTip": "D:\\Documents\\Csharp\\ASP\\MyWebMVC\\Controllers\\AdminController.cs",
-              "RelativeToolTip": "Controllers\\AdminController.cs",
-              "ViewState": "AQIAAAEAAAAAAAAAAAAAAAoAAAAeAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-18T15:43:13.213Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "DanhSachTaiKhoan.cshtml",
-              "DocumentMoniker": "D:\\Documents\\Csharp\\ASP\\MyWebMVC\\Views\\Admin\\DanhSachTaiKhoan.cshtml",
-              "RelativeDocumentMoniker": "Views\\Admin\\DanhSachTaiKhoan.cshtml",
-              "ToolTip": "D:\\Documents\\Csharp\\ASP\\MyWebMVC\\Views\\Admin\\DanhSachTaiKhoan.cshtml",
-              "RelativeToolTip": "Views\\Admin\\DanhSachTaiKhoan.cshtml",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAAAAoAAAAGAAAA",
+              "DocumentIndex": 6,
+              "Title": "DanhSachDonHang.cshtml",
+              "DocumentMoniker": "D:\\Documents\\Csharp\\ASP\\MyWebMVC\\Views\\Admin\\DanhSachDonHang.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\DanhSachDonHang.cshtml",
+              "ToolTip": "D:\\Documents\\Csharp\\ASP\\MyWebMVC\\Views\\Admin\\DanhSachDonHang.cshtml",
+              "RelativeToolTip": "Views\\Admin\\DanhSachDonHang.cshtml",
+              "ViewState": "AQIAAEUAAAAAAAAAAIBZwGMAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-20T10:10:57.025Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "SuaTaiKhoan.cshtml",
-              "DocumentMoniker": "D:\\Documents\\Csharp\\ASP\\MyWebMVC\\Views\\Admin\\SuaTaiKhoan.cshtml",
-              "RelativeDocumentMoniker": "Views\\Admin\\SuaTaiKhoan.cshtml",
-              "ToolTip": "D:\\Documents\\Csharp\\ASP\\MyWebMVC\\Views\\Admin\\SuaTaiKhoan.cshtml",
-              "RelativeToolTip": "Views\\Admin\\SuaTaiKhoan.cshtml",
-              "ViewState": "AQIAAD8AAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-20T10:10:46.884Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-13T02:38:16.786Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "VnPaymentResponseModel.cs",
-              "DocumentMoniker": "D:\\Documents\\Csharp\\ASP\\MyWebMVC\\ViewModels\\VnPaymentResponseModel.cs",
-              "RelativeDocumentMoniker": "ViewModels\\VnPaymentResponseModel.cs",
-              "ToolTip": "D:\\Documents\\Csharp\\ASP\\MyWebMVC\\ViewModels\\VnPaymentResponseModel.cs",
-              "RelativeToolTip": "ViewModels\\VnPaymentResponseModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAxAAAA",
+              "Title": "CapNhatDonHang.cshtml",
+              "DocumentMoniker": "D:\\Documents\\Csharp\\ASP\\MyWebMVC\\Views\\Admin\\CapNhatDonHang.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\CapNhatDonHang.cshtml",
+              "ToolTip": "D:\\Documents\\Csharp\\ASP\\MyWebMVC\\Views\\Admin\\CapNhatDonHang.cshtml",
+              "RelativeToolTip": "Views\\Admin\\CapNhatDonHang.cshtml",
+              "ViewState": "AQIAADAAAAAAAAAAAIBZwD8AAAByAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-13T02:36:21.466Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "HoaDon.cs",
+              "DocumentMoniker": "D:\\Documents\\Csharp\\ASP\\MyWebMVC\\Data\\HoaDon.cs",
+              "RelativeDocumentMoniker": "Data\\HoaDon.cs",
+              "ToolTip": "D:\\Documents\\Csharp\\ASP\\MyWebMVC\\Data\\HoaDon.cs",
+              "RelativeToolTip": "Data\\HoaDon.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAxwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-19T15:51:28.84Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-13T02:31:51.068Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
+              "Title": "SearchByName.cshtml",
+              "DocumentMoniker": "D:\\Documents\\Csharp\\ASP\\MyWebMVC\\Views\\Admin\\SearchByName.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\SearchByName.cshtml",
+              "ToolTip": "D:\\Documents\\Csharp\\ASP\\MyWebMVC\\Views\\Admin\\SearchByName.cshtml",
+              "RelativeToolTip": "Views\\Admin\\SearchByName.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-12T07:53:22.997Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Documents\\Csharp\\ASP\\MyWebMVC\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "D:\\Documents\\Csharp\\ASP\\MyWebMVC\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABMAAAAMAAAA",
+              "ViewState": "AQIAACMAAAAAAAAAAIBZwDwAAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-18T15:55:31.166Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-12T07:13:26.986Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "KhachHangController.cs",
-              "DocumentMoniker": "D:\\Documents\\Csharp\\ASP\\MyWebMVC\\Controllers\\KhachHangController.cs",
-              "RelativeDocumentMoniker": "Controllers\\KhachHangController.cs",
-              "ToolTip": "D:\\Documents\\Csharp\\ASP\\MyWebMVC\\Controllers\\KhachHangController.cs",
-              "RelativeToolTip": "Controllers\\KhachHangController.cs",
-              "ViewState": "AQIAAGQAAAAAAAAAAAAAAE4AAAAIAAAA",
+              "DocumentIndex": 0,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "D:\\Documents\\Csharp\\ASP\\MyWebMVC\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AdminController.cs",
+              "ToolTip": "D:\\Documents\\Csharp\\ASP\\MyWebMVC\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "Controllers\\AdminController.cs",
+              "ViewState": "AQIAAJQCAAAAAAAAAAAAAKcCAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-20T03:35:20.876Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ThanhToanDonHang.cshtml",
-              "DocumentMoniker": "D:\\Documents\\Csharp\\ASP\\MyWebMVC\\Views\\Cart\\ThanhToanDonHang.cshtml",
-              "RelativeDocumentMoniker": "Views\\Cart\\ThanhToanDonHang.cshtml",
-              "ToolTip": "D:\\Documents\\Csharp\\ASP\\MyWebMVC\\Views\\Cart\\ThanhToanDonHang.cshtml",
-              "RelativeToolTip": "Views\\Cart\\ThanhToanDonHang.cshtml",
-              "ViewState": "AQIAAEgAAAAAAAAAAAAAAE0AAACQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-19T16:48:00.231Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "MyConstant.cs",
-              "DocumentMoniker": "D:\\Documents\\Csharp\\ASP\\MyWebMVC\\Helpers\\MyConstant.cs",
-              "RelativeDocumentMoniker": "Helpers\\MyConstant.cs",
-              "ToolTip": "D:\\Documents\\Csharp\\ASP\\MyWebMVC\\Helpers\\MyConstant.cs",
-              "RelativeToolTip": "Helpers\\MyConstant.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAKAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-19T16:50:19.771Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "VnPayLibrary.cs",
-              "DocumentMoniker": "D:\\Documents\\Csharp\\ASP\\MyWebMVC\\Helpers\\VnPayLibrary.cs",
-              "RelativeDocumentMoniker": "Helpers\\VnPayLibrary.cs",
-              "ToolTip": "D:\\Documents\\Csharp\\ASP\\MyWebMVC\\Helpers\\VnPayLibrary.cs",
-              "RelativeToolTip": "Helpers\\VnPayLibrary.cs",
-              "ViewState": "AQIAAJEAAAAAAAAAAAAAAJ8AAAAEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-19T15:48:22.445Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "NhanVien.cs",
-              "DocumentMoniker": "D:\\Documents\\Csharp\\ASP\\MyWebMVC\\Data\\NhanVien.cs",
-              "RelativeDocumentMoniker": "Data\\NhanVien.cs",
-              "ToolTip": "D:\\Documents\\Csharp\\ASP\\MyWebMVC\\Data\\NhanVien.cs",
-              "RelativeToolTip": "Data\\NhanVien.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAA3wAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-19T07:13:06.4Z",
+              "WhenOpened": "2024-06-12T07:09:37.309Z",
               "EditorCaption": ""
             }
           ]

@@ -1,0 +1,42 @@
+﻿@model IEnumerable<MyWebMVC.Data.HangHoa>
+<section class="product_section womens_product text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="section_title text-center">
+                    <h2>Top sản phẩm bán mới nhất</h2>
+                </div>
+            </div>
+        </div>
+        <div class="product_area">
+            
+            <div class="tab-content" style="display: flex; flex-wrap: wrap; justify-content: space-evenly">
+
+                @foreach(var item in Model)
+                {
+                    <div class="col-lg-3" style="width: 19%; display: inline-block;">
+                        <div class="single_product">
+                            <div class="product_thumb">
+                                <a class="primary_img" asp-controller="HangHoa" asp-action="Detail" asp-route-maHangHoa="@item.MaHh" tabindex="0" style="width: 100px">
+                                    <img id="ContentPlaceHolder1_ProductRepeater_image_0" src="~/Hinh/HangHoa/@item.Hinh">
+                                </a>
+                                <div class="quick_button">
+                                    <a class="primary_img" asp-controller="HangHoa" asp-action="Detail" asp-route-maHangHoa="@item.MaHh">Xem sản phẩm</a>
+                                </div>
+
+                            </div>
+                            <div class="product_content">
+                                <h3><a asp-controller="HangHoa" asp-action="Detail" asp-route-maHangHoa="@item.MaHh tabindex="0">@item.TenHh</a></h3>
+                                <span class="current_price">@item.DonGia $</span>
+                            </div>
+                        </div>
+                    </div>
+                }
+
+                
+
+            </div>
+        </div>
+
+    </div>
+</section>

@@ -16,9 +16,9 @@
             <th>
                 Ngày đặt
             </th>
-            <th>
+           @*  <th>
                 Ngày cần
-            </th>
+            </th> *@
             <th>
                 Ngày giao
             </th>
@@ -58,9 +58,9 @@
             <td>
                 @Html.DisplayFor(modelItem => item.NgayDat)
             </td>
-            <td>
+            @* <td>
                 @Html.DisplayFor(modelItem => item.NgayCan)
-            </td>
+            </td> *@
             <td>
                 @Html.DisplayFor(modelItem => item.NgayGiao)
             </td>
@@ -92,9 +92,10 @@
                 @(item.MaTrangThai == 0?"Chưa thanh toán":"Đã thanh toán")
             </td>
             <td>
-                <a asp-action="CapNhatDonHang" asp-route-id="@item.MaHd">Cập nhật</a> |
+                <a asp-action="CapNhatDonHang" asp-route-id="@item.MaHd">Sửa</a> |
                 <a asp-action="ChiTietHoaDon" asp-route-id="@item.MaHd">Xem</a> |
                 <a asp-action="XoaDonHang" asp-route-id="@item.MaHd">Xóa</a>
+                <a asp-action="XuatHoaDon" asp-route-id="@item.MaHd">Xuất</a>
             </td>
         </tr>
 }

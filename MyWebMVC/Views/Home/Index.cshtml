@@ -20,12 +20,12 @@
                     <div class="carousel-inner" role="listbox">
                         @foreach(var item in Model)
                         {
-                            <div class="carousel-item  @(item == Model.First() ? "active" : "") rounded" style="position:relative">
-                                <a asp-action="Index" asp-controller="HangHoa" asp-route-loai="@item.MaLoai"><img src="~/Hinh/Loai/@item.Hinh" style="width:300px; height:100px; z-index:-1" class="img-fluid w-100 h-100 bg-secondary rounded" alt="First slide"></a>
-                                @* <a asp-action="Index" asp-controller="HangHoa" asp-route-loai="@item.MaLoai" style="color:white !important; position:absolute;top: 40%;
-    left: 34%;
-    font-size: 40px; font-weight:bold" ; class="btn px-4 py-2 text-white rounded">@item.TenLoai</a> *@
+                            <a class="carousel-item  @(item == Model.First() ? "active" : "") rounded" asp-action="Index" asp-controller="HangHoa" asp-route-loai="@item.MaLoai">
+                            <div>
+                                <img loading="lazy" src="~/Hinh/Loai/@item.Hinh" style="width:300px; height:100px; z-index:100;" class="img-fluid w-100 h-100 bg-secondary rounded" alt="First slide">
+                               
                             </div>
+                            </a>
                         }
 
                     </div>
@@ -43,3 +43,5 @@
     </div>
 </div>
 <!-- Hero End -->
+@await Component.InvokeAsync("TopSales")
+@await Component.InvokeAsync("TopLastest")

@@ -47,7 +47,11 @@
                         <small class="me-3"><i class="fas fa-envelope me-2 text-secondary"></i><a href="#" class="text-white">Email@Example.com</a></small>
                     </div>
                     <div class="top-link pe-2">
-                        <a href="#" class="text-white"><small class="text-white mx-2">Privacy Policy</small>/</a>
+                    @if(User.Identity.IsAuthenticated && !User.IsInRole("Customer"))
+                    {
+                        <a href="~/Admin/Index" class="text-white"><small class="text-white mx-2">Quản lý</small>/</a>
+                    }
+                    
                         <a href="#" class="text-white"><small class="text-white mx-2">Terms of Use</small>/</a>
                         <a href="#" class="text-white"><small class="text-white ms-2">Sales and Refunds</small></a>
                     </div>
@@ -79,10 +83,20 @@
                             <button  class="btn-search btn border border-secondary btn-md-square rounded-circle bg-white me-4" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search text-primary"></i></button>
                             
                             @await Component.InvokeAsync("Cart")
-                            
-                            <a asp-action="Profile" asp-controller="KhachHang" class="my-auto">
+
+
+                        <div class="nav-item dropdown">
+                            <a asp-controller="KhachHang" asp-action="Profile" class="dropdown-item">
                                 <i class="fas fa-user fa-2x"></i>
                             </a>
+                            <div class="dropdown-menu m-0 bg-secondary rounded-0" style="left:-166%">
+                                <a asp-controller="KhachHang" asp-action="Profile" class="dropdown-item">Tài khoản của tôi</a>
+                                <a asp-controller="KhachHang" asp-action="DangXuat" class="dropdown-item">Đăng xuất</a>
+                                
+                            </div>
+                        </div>
+
+                            
                         </div>
                     </div>
                 </nav>
@@ -110,7 +124,7 @@
                 </div>
             </div>
         </div>
-        <div class="container-fluid page-header py-5" style="margin-top:140px">
+    <div class="container-fluid page-header py-5" style="background-image:url('/img/bg_1.jpg');margin-top:140px;">
             <h1 class="text-center text-white display-6">TMH Store</h1>
             <ol class="breadcrumb justify-content-center mb-0">
                 <li class=""><a href="#">Trang chủ</a></li>
@@ -143,7 +157,7 @@
                         </div>
                         <div class="col-lg-3">
                             <div class="d-flex justify-content-end pt-3">
-                                <a class="btn  btn-outline-secondary me-2 btn-md-square rounded-circle" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-outline-secondary me-2 btn-md-square rounded-circle" href=""><i class="fab fa-twitter"></i></a>
                                 <a class="btn btn-outline-secondary me-2 btn-md-square rounded-circle" href=""><i class="fab fa-facebook-f"></i></a>
                                 <a class="btn btn-outline-secondary me-2 btn-md-square rounded-circle" href=""><i class="fab fa-youtube"></i></a>
                                 <a class="btn btn-outline-secondary btn-md-square rounded-circle" href=""><i class="fab fa-linkedin-in"></i></a>

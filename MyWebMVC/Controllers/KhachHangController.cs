@@ -102,13 +102,15 @@ namespace MyWebMVC.Controllers
                         }
                         else
                         {
+                            var vaitro = (khachHang.VaiTro == 0) ? "Customer" : "Admin";
                             var claims = new List<Claim>
                                 {
                                     new Claim(ClaimTypes.Email, khachHang.Email),
                                     new Claim(ClaimTypes.Name, khachHang.HoTen),
                                     new Claim(MyConstant.CLAIM_CUSTOMERID, khachHang.MaKh),
                                     //claim role-động
-                                    new Claim(ClaimTypes.Role, "Customer")
+                                    
+                                    new Claim(ClaimTypes.Role, vaitro)
                                 };
                             var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
                             var claimsPrincipal = new ClaimsPrincipal(claimsIdentity);
@@ -124,7 +126,6 @@ namespace MyWebMVC.Controllers
                             {
                                 return RedirectToAction("Index", "Home");
                             }
-
                         }
                     }
                 }
@@ -138,11 +139,7 @@ namespace MyWebMVC.Controllers
         {
             var customerId = HttpContext.User.Claims.SingleOrDefault(p => p.Type == MyConstant.CLAIM_CUSTOMERID).Value;
             var khachHang = db.KhachHangs.SingleOrDefault(p => p.MaKh == customerId);
-            //if(customerId == "hieu")
-            //{
-            //    return RedirectToAction("LoginAdmin");
-            //}
-
+            
             return View(khachHang);
         }
 

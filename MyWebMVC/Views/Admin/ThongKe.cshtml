@@ -1,0 +1,35 @@
+﻿
+@{
+    ViewData["Title"] = "Thống kê doanh thu";
+    Layout = "~/Views/Shared/_layoutAdmin.cshtml";
+}
+
+@model IEnumerable<MyWebMVC.ViewModels.StatisticVM>
+
+
+<h2>Thống kê doanh thu theo @ViewBag.period</h2>
+<table style="width:100%; " class="container">
+    <thead>
+        <tr>
+            <th>Period</th>
+            <th>Order Count</th>
+            <th>Total Revenue</th>
+            
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Period</td>
+                <td>@item.OrderCount</td>
+                <td>@item.TotalRevenue</td>
+            </tr>
+        }
+    </tbody>
+</table>
+<form id="exportForm" method="post" action="@Url.Action("ExportExcel", "Admin")">
+    <input type="hidden" name="soLieu" value='@ViewBag.SoLieu' />
+    <input type="hidden" name="period" value="@ViewBag.period" />
+    <button type="submit" class="btn btn-google">Export to Excel</button>
+</form>

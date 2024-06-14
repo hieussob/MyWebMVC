@@ -1349,6 +1349,10 @@
       "PackagePath": "staticwebassets\\img\\avatar.jpg"
     },
     {
+      "Id": "D:\\Documents\\Csharp\\ASP\\MyWebMVC\\wwwroot\\img\\background_header.jpg",
+      "PackagePath": "staticwebassets\\img\\background_header.jpg"
+    },
+    {
       "Id": "D:\\Documents\\Csharp\\ASP\\MyWebMVC\\wwwroot\\img\\baner-1.png",
       "PackagePath": "staticwebassets\\img\\baner-1.png"
     },
@@ -1379,6 +1383,10 @@
     {
       "Id": "D:\\Documents\\Csharp\\ASP\\MyWebMVC\\wwwroot\\img\\best-product-6.jpg",
       "PackagePath": "staticwebassets\\img\\best-product-6.jpg"
+    },
+    {
+      "Id": "D:\\Documents\\Csharp\\ASP\\MyWebMVC\\wwwroot\\img\\bg_1.jpg",
+      "PackagePath": "staticwebassets\\img\\bg_1.jpg"
     },
     {
       "Id": "D:\\Documents\\Csharp\\ASP\\MyWebMVC\\wwwroot\\img\\carousel-1.jpg",

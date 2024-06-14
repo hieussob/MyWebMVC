@@ -1,4 +1,4 @@
-﻿@model IEnumerable<MyWebMVC.ViewModels.HangHoaVM>
+﻿@model X.PagedList.IPagedList<MyWebMVC.ViewModels.HangHoaVM>
 @{
     ViewData["Title"] = "Index";
     Layout = "~/Views/Shared/_LayoutCustomAll.cshtml";
@@ -6,9 +6,9 @@
     ViewBag.active = 2;
     ViewBag.layout = " / Cửa hàng / ";
     ViewBag.layoutDetail = " Chi tiết sản phẩm";
-
 }
 
+@using X.PagedList.Mvc.Core;
 
 <div>Có<b> @Model.Count() </b> sản phẩm</div>    
 @foreach (var item in Model)
@@ -33,5 +33,29 @@
         </div>
     </div>
 }
-        <!-- Fruits Shop End-->
+<div class="col-12">
+        @Html.PagedListPager(Model, page => Url.Action("Index", new { page = page }))
+</div>
+<style>
+    ul.pagination{
+        display:flex;
+        justify-content:center;
+    }
+    ul.pagination li{
+        border-radius:3px;
+    
+    }
+
+    ul.pagination li.active {
+        background-color: green !important;
+        width: 42px !important;
+        height: 43px;
+        padding-bottom: 21px;
+        margin-top: -10px;
+        text-align: center;
+        line-height: 43px;
+        color: white;
+    }
+</style>
+
 

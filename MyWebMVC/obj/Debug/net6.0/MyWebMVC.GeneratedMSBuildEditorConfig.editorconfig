@@ -22,6 +22,10 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ2FwTmhhdERhbmhNdWMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/Documents/Csharp/ASP/MyWebMVC/Views/Admin/CapNhatDonHang.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ2FwTmhhdERvbkhhbmcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Documents/Csharp/ASP/MyWebMVC/Views/Admin/CapNhatNCC.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ2FwTmhhdE5DQy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -54,8 +58,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/Documents/Csharp/ASP/MyWebMVC/Views/Admin/SearchByName.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cU2VhcmNoQnlOYW1lLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Documents/Csharp/ASP/MyWebMVC/Views/Admin/SuaTaiKhoan.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cU3VhVGFpS2hvYW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Documents/Csharp/ASP/MyWebMVC/Views/Admin/Test.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cVGVzdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Documents/Csharp/ASP/MyWebMVC/Views/Admin/ThemDanhMuc.cshtml]
@@ -76,6 +88,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/Documents/Csharp/ASP/MyWebMVC/Views/Admin/ThemNCC.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cVGhlbU5DQy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Documents/Csharp/ASP/MyWebMVC/Views/Admin/ThongKe.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cVGhvbmdLZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Documents/Csharp/ASP/MyWebMVC/Views/Cart/Index.cshtml]
@@ -100,6 +116,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/Documents/Csharp/ASP/MyWebMVC/Views/HangHoa/Search.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFuZ0hvYVxTZWFyY2guY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Documents/Csharp/ASP/MyWebMVC/Views/HangHoa/SearchByPrice.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFuZ0hvYVxTZWFyY2hCeVByaWNlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Documents/Csharp/ASP/MyWebMVC/Views/Home/Index.cshtml]
@@ -136,6 +156,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/Documents/Csharp/ASP/MyWebMVC/Views/Shared/Components/MenuLoai/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcTWVudUxvYWlcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Documents/Csharp/ASP/MyWebMVC/Views/Shared/Components/TopLastest/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcVG9wTGFzdGVzdFxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Documents/Csharp/ASP/MyWebMVC/Views/Shared/Components/TopSales/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcVG9wU2FsZXNcRGVmYXVsdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Documents/Csharp/ASP/MyWebMVC/Views/Shared/Error.cshtml]

@@ -1,0 +1,41 @@
+﻿
+@{
+    ViewData["Title"] = "Test";
+    Layout = "~/Views/Shared/_layoutAdmin.cshtml";
+}
+
+@model IEnumerable<MyWebMVC.ViewModels.StatisticVM>
+
+<h2>Order Statistics</h2>
+
+<form method="get" action="@Url.Action("ThongKe", "Admin")">
+    <label for="period">Select Period:</label>
+    <select id="period" name="period">
+        <option value="day">Day</option>
+        <option value="month">Month</option>
+        <option value="year">Year</option>
+    </select>
+    <button type="submit">Get Statistics</button>
+</form>
+
+@* <table>
+    <thead>
+        <tr>
+            <th>Period</th>
+            <th>Order Count</th>
+            <th>Total Revenue</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var stat in Model)
+        {
+            <tr>
+                <td>@stat.Period</td>
+                <td>@stat.OrderCount</td>
+                <td>@stat.TotalRevenue</td>
+            </tr>
+        }
+    </tbody>
+</table> *@
+
+

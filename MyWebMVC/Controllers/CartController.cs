@@ -18,6 +18,7 @@ namespace MyWebMVC.Controllers
         }
 
         public List<CartItem> Cart => HttpContext.Session.Get<List<CartItem>>(MyConstant.CART_KEY) ?? new List<CartItem>();
+        public ChiTietDonHangVM chiTietHoaDon => HttpContext.Session.Get<ChiTietDonHangVM>("CHITIETDONHANG") ?? new ChiTietDonHangVM();
         public  List<ChiTietDonHangVM> result = new List<ChiTietDonHangVM>();
     
         public IActionResult Index()
@@ -84,8 +85,6 @@ namespace MyWebMVC.Controllers
 
             if (ModelState.IsValid)
             {
-                
-                
                 var customerId = HttpContext.User.Claims.SingleOrDefault(p => p.Type == MyConstant.CLAIM_CUSTOMERID).Value;
                 var khachHang = new KhachHang();
                 if (model.GiongKhachHang)
@@ -124,7 +123,8 @@ namespace MyWebMVC.Controllers
                     }
                     db.AddRange(cthd);
                     db.SaveChanges();
-                    
+                    //HttpContext.Session.Set<ChiTietDonHangVM>("CHITIETDONHANG", new ChiTietDonHangVM());
+
                     if (payment == "Thanh Toán VnPay")
                     {
                         var vnPayModel = new VnPaymentRequestModel
@@ -135,11 +135,11 @@ namespace MyWebMVC.Controllers
                             FullName = model.HoTen,
                             OrderId = new Random().Next(1000, 10000)
                         };
-                        
-                        HttpContext.Session.Set<List<CartItem>>(MyConstant.CART_KEY, new List<CartItem>());
+                          HttpContext.Session.Set<List<CartItem>>(MyConstant.CART_KEY, new List<CartItem>());
                         return Redirect(_vnPayservice.CreatePaymentUrl(HttpContext, vnPayModel));
                     }
                     HttpContext.Session.Set<List<CartItem>>(MyConstant.CART_KEY, new List<CartItem>());
+                    
                     return RedirectToAction("Success");
                 }
                 catch
